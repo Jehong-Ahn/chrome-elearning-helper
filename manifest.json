@@ -1,0 +1,16 @@
+{
+  "name": "E-learning Helper",
+  "description" : "",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://edu.tok2.kr/*"],
+      "run_at": "document_idle",
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": [
+    "*://*.tok2.kr/*"
+  ]
+}
